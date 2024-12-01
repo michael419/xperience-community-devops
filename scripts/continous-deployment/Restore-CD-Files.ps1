@@ -12,7 +12,7 @@ Get-ChildItem -Path $CDRepositoryLocation -Recurse | Where-Object {
 } | Remove-Item -Recurse -Force
 Write-Output "CDRepository directory contents successfully deleted"
 
-# If you zipped up the CD files in conjunction with the Store-CD-Files powershell script, ensure you comment the below 3 lines
+# If you zipped up the CD files in conjunction with the Store-CD-Files powershell script, ensure you uncomment the below 3 lines
 # Write-Output "Unzipping CDRepository.zip..."
 # Expand-Archive -Path "$TargetLocation\App_Data\CDRepository.zip" -DestinationPath "$CDRepositoryLocation"
 # Write-Output "CDRepository.zip successfully extracted"
